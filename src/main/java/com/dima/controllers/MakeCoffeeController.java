@@ -25,6 +25,12 @@ public class MakeCoffeeController {
     }
 
     public void handleData() {
-        view.getData();
+        int choice = view.getData();
+        if (choice != -1) {
+            switch (COFFEE_KINDS_VALUES[choice-1]) {
+                case LATTE -> System.out.println("Making latte");
+                case ESPRESSO -> System.out.println("Making espresso");
+            }
+        }
     }
 }
