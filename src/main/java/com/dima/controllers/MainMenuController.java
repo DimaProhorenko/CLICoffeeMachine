@@ -1,12 +1,14 @@
 package com.dima.controllers;
 
+import com.dima.controllers.auth.LoginController;
 import com.dima.views.MainMenuView;
 
 public class MainMenuController {
     public static final Choices[] CHOICES_VALUES = Choices.values();
     public enum Choices {
         EXIT("Exit"),
-        MAKE_COFFEE("Make coffee");
+        MAKE_COFFEE("Make coffee"),
+        LOGIN("Login");
 
         private String msg;
 
@@ -34,6 +36,7 @@ public class MainMenuController {
             if (choice == -1) continue;
             switch (CHOICES_VALUES[choice]) {
                 case MAKE_COFFEE -> new MakeCoffeeController().handleData();
+                case LOGIN -> new LoginController().handleData();
             }
         }
     }
