@@ -16,6 +16,8 @@ public class MainMenuView {
     public int getData() {
         Scanner scanner = new Scanner(System.in);
 
+        Printer.printHeader(Constants.MAIN_MENU_HEADER);
+
         for (int i = 0; i < MainMenuController.CHOICES_VALUES.length; i++) {
             System.out.println(i + " - "
                     + MainMenuController.CHOICES_VALUES[i].getMsg());

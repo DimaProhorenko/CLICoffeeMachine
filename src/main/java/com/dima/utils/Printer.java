@@ -1,5 +1,6 @@
 package com.dima.utils;
 
+
 public abstract class Printer {
 
 
