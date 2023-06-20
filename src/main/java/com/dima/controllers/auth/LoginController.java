@@ -1,15 +1,8 @@
 package com.dima.controllers.auth;
 
 import com.dima.JAC;
-import com.dima.database.DBConnection;
 import com.dima.models.LoginModel;
-import com.dima.utils.Encryptor;
 import com.dima.views.auth.LoginView;
-
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.time.LocalDate;
-import java.util.Arrays;
 
 public class LoginController {
     private LoginView view;

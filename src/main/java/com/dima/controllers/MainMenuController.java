@@ -10,7 +10,8 @@ public class MainMenuController {
     public enum Choices {
         EXIT("Exit"),
         MAKE_COFFEE("Make coffee"),
-        LOGIN("Login");
+        LOGIN("Login"),
+        ADD_SUPPLIES("Add supplies");
 
         private String msg;
 
@@ -35,9 +36,9 @@ public class MainMenuController {
 
         while (choice != Choices.EXIT.ordinal()) {
             if(JAC.isAdmin()) {
-                choice = view.getData(Constants.NUMBER_OF_OPTIONS_ADMIN);
+                choice = view.getData(Constants.EXCLUDE_FROM_ADMIN);
             } else {
-                choice = view.getData(Constants.NUMBER_OF_OPTIONS_NOT_ADMIN);
+                choice = view.getData(Constants.EXCLUDE_FROM_NOT_ADMIN);
             }
             if (choice == -1) continue;
             switch (CHOICES_VALUES[choice]) {
