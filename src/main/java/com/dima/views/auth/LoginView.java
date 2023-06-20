@@ -19,4 +19,12 @@ public class LoginView {
         scanner.nextLine();
         return new String[] {userName, password};
     }
+
+    public void printLoginSuccess() {
+        Printer.printHeader("Logged in successfully");
+    }
+
+    public void printLoginError() {
+        Printer.printHeader("Logging in failed");
+    }
 }
