@@ -7,4 +7,7 @@ public class Constants {
     public static final String LOGIN_HEADER = "JAC LOGIN";
 
     public static final String PRINTER_DELIMETER = "-";
+
+    public static final int NUMBER_OF_OPTIONS_NOT_ADMIN = 3;
+    public static final int NUMBER_OF_OPTIONS_ADMIN = 1;
 }

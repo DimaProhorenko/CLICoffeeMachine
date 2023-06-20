@@ -13,12 +13,12 @@ public class MainMenuView {
         Printer.printHeader("Welcome to " + Constants.APP_NAME);
     }
 
-    public int getData() {
+    public int getData(int numOfOptions) {
         Scanner scanner = new Scanner(System.in);
 
         Printer.printHeader(Constants.MAIN_MENU_HEADER);
 
-        for (int i = 0; i < MainMenuController.CHOICES_VALUES.length; i++) {
+        for (int i = 0; i < numOfOptions; i++) {
             System.out.println(i + " - "
                     + MainMenuController.CHOICES_VALUES[i].getMsg());
         }
